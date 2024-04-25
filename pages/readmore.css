@@ -326,7 +326,7 @@ body {
   font-weight: 600;
   font-family: "Font Awesome 5 Free";
   font-size: 0.8em;
-  color: #f5c518;
+  color: #1599F4;
 }
 .overlay__content--column__item {
   font-size: 1.2em;
@@ -347,7 +347,7 @@ body {
 
 .bottom-content {
   width: 100%;
-  background: #fff;
+  background: #222;
   display: flex;
   justify-content: center;
 }
@@ -741,7 +741,7 @@ body {
 .movie__details--main__header {
   display: flex;
   border-radius: 0.25em;
-  border: 1px solid #f5c518;
+  border: 1px solid #1599F4;
   gap: 1em;
   align-items: center;
 }
@@ -750,7 +750,7 @@ body {
 }
 .movie__details--main__header--title {
   padding: 1em 0.5em;
-  background: #f5c518;
+  background: #1599F4;
   font-weight: 600;
   position: relative;
   z-index: 2;
@@ -761,7 +761,7 @@ body {
 }
 .movie__details--main__header--title::after {
   content: "";
-  background: #f5c518;
+  background: #1599F4;
   height: 100%;
   top: 0;
   right: -0.5em;
@@ -839,7 +839,7 @@ body {
   align-items: center;
   gap: 0.75em;
   padding: 0.125em 0.5em;
-  border-left: 3px solid #f5c518;
+  border-left: 3px solid #1599F4;
 }
 .main__gallery--header:hover {
   cursor: pointer;
