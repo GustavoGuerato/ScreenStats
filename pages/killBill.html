@@ -105,7 +105,7 @@
 
           <div class="movie-btns">
             <button><i class="fa fa-play"></i> &nbsp; Watch trailer</button>
-            <button class="read-more">
+            <button class="read-more" onclick="scrollToBottom()">
               <i class="fa fa-circle"></i> <i class="fa fa-circle"></i>
               <i class="fa fa-circle"></i>&nbsp; Read more
             </button>
@@ -466,7 +466,8 @@
                 <div class="main__cast--actor">
                   <img
                     class="main__cast--actor__photo"
-src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR5W1ko97ZzQeSGm2nxy-G0HUm8RDqEOLmLipQVqvU7eK4vYsnFbYlABjFGz2-MFJcsSUfB"                  />
+                    src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR5W1ko97ZzQeSGm2nxy-G0HUm8RDqEOLmLipQVqvU7eK4vYsnFbYlABjFGz2-MFJcsSUfB"
+                  />
                   <div class="main__cast--actor__details">
                     <div class="main__cast--actor__name" style="color: white">
                       Sakichi Sato
@@ -715,6 +716,11 @@ src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR5W1ko97ZzQeSGm2nxy-G
         "toggle",
         ".header__search--dropdown"
       );
+
+      function scrollToBottom() {
+        var bottomContent = document.querySelector(".bottom-content");
+        bottomContent.scrollIntoView({ behavior: "smooth" });
+      }
     </script>
   </body>
 </html>

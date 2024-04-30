@@ -105,7 +105,7 @@
 
           <div class="movie-btns">
             <button><i class="fa fa-play"></i> &nbsp; Watch trailer</button>
-            <button class="read-more">
+            <button class="read-more" onclick="scrollToBottom()">
               <i class="fa fa-circle"></i> <i class="fa fa-circle"></i>
               <i class="fa fa-circle"></i>&nbsp; Read more
             </button>
@@ -134,19 +134,7 @@
       <img src="../images/image-removebg-preview (1).png" alt="" />
     </div>
 
-    <footer>
-      <div class="logo-box">
-        <p class="logo">Screen<span>Stats</span></p>
-        <p><i class="fa fa-copyright"></i> 2024</p>
-      </div>
 
-      <ul>
-        <li>Contact</li>
-        <li>filmes</li>
-        <li>series</li>
-        <li>watchlist</li>
-        <li>Estatísticas</li>
-      </ul>
 
       <div class="socail-box"></div>
     </footer>
@@ -657,6 +645,19 @@
         </div>
       </div>
     </div>
+    <footer>
+      <div class="logo-box">
+        <p class="logo">Screen<span>Stats</span></p>
+        <p><i class="fa fa-copyright"></i> 2024</p>
+      </div>
+
+      <ul>
+        <li>Contact</li>
+        <li>filmes</li>
+        <li>series</li>
+        <li>watchlist</li>
+        <li>Estatísticas</li>
+      </ul>
     <script>
       class Utils {
         static clickEventClassActions(
@@ -731,6 +732,10 @@
         "toggle",
         ".header__search--dropdown"
       );
+      function scrollToBottom() {
+        var bottomContent = document.querySelector(".bottom-content");
+        bottomContent.scrollIntoView({ behavior: "smooth" });
+      }
     </script>
   </body>
 </html>

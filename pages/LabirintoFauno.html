@@ -70,7 +70,7 @@
           src="https://play-lh.googleusercontent.com/L61R5gAwY5BP7TqrmuhFrh1PJSubnEhSUVUj1wQzp78RYF8s3mKdKJLzCmlkurPdnm7B"
           class="poster"
         />
-
+        <!---man wft is that big links? Gustavo is crazy----->
         <div class="popular-movie-slider-content">
           <p class="release">2004</p>
           <h2 class="movie-name">Labirinto do fauno</h2>
@@ -102,7 +102,7 @@
 
           <div class="movie-btns">
             <button><i class="fa fa-play"></i> &nbsp; Watch trailer</button>
-            <button class="read-more">
+            <button class="read-more" onclick="scrollToBottom()">
               <i class="fa fa-circle"></i> <i class="fa fa-circle"></i>
               <i class="fa fa-circle"></i>&nbsp; Read more
             </button>
@@ -704,6 +704,11 @@
         "toggle",
         ".header__search--dropdown"
       );
+
+      function scrollToBottom() {
+        var bottomContent = document.querySelector(".bottom-content");
+        bottomContent.scrollIntoView({ behavior: "smooth" });
+      }
     </script>
   </body>
 </html>
