@@ -102,6 +102,9 @@
 
           <div class="movie-btns">
             <button><i class="fa fa-play"></i> &nbsp; Watch trailer</button>
+            <button class="read-more" onclick="scrollToBottom()">
+              <i class="fa fa-circle"></i> <i class="fa fa-circle"></i>
+              <i class="fa fa-circle"></i>&nbsp; Read more
           </div>
         </div>
       </div>
@@ -707,6 +710,11 @@
         "toggle",
         ".header__search--dropdown"
       );
+
+      function scrollToBottom() {
+        var bottomContent = document.querySelector(".bottom-content");
+        bottomContent.scrollIntoView({ behavior: "smooth" });
+      }
     </script>
   </body>
 </html>
