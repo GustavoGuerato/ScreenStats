@@ -1,5 +1,28 @@
 {
+  "name": "screenstats",
+  "version": "1.6.0",
+  "description": "Um projeto simples com arquivos HTML, JavaScript e testes unitários usando Jest.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "Gustavo Guerato",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.18.0",
+    "@babel/preset-env": "^7.18.0",
+    "babel-jest": "^27.4.0",
+    "jest": "^27.4.7",
+    "sass": "^1.43.4"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    },
+    "testEnvironment": "jsdom"
+  },
   "dependencies": {
-    "sass": "^1.75.0"
+    "puppeteer": "^22.9.0"
   }
 }
